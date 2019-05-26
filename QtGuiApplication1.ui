@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Nikita Voronin</author>
+ <class>QtGuiApplication1Class</class>
+ <widget class="QMainWindow" name="QtGuiApplication1Class">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>529</width>
+    <height>311</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QtGuiApplication1</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #424242;
+font: 75 italic 12pt &quot;Gill Sans MT&quot;;
+color: rgb(1, 223, 165);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTreeView" name="treeView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>511</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSave">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>220</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Save</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDetails">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>220</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>See Details</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>529</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="readMeAction"/>
+   </widget>
+   <widget class="QMenu" name="menuActions">
+    <property name="title">
+     <string>Actions</string>
+    </property>
+    <addaction name="insertRowAction"/>
+    <addaction name="insertColumnAction"/>
+    <addaction name="separator"/>
+    <addaction name="removeRowAction"/>
+    <addaction name="removeColumnAction"/>
+    <addaction name="separator"/>
+    <addaction name="insertChildAction"/>
+   </widget>
+   <addaction name="menuHelp"/>
+   <addaction name="menuActions"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="insertRowAction">
+   <property name="text">
+    <string>Insert Row</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I, R</string>
+   </property>
+  </action>
+  <action name="insertColumnAction">
+   <property name="text">
+    <string>Insert Column</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I, C</string>
+   </property>
+  </action>
+  <action name="removeRowAction">
+   <property name="text">
+    <string>Remove Row</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R, R</string>
+   </property>
+  </action>
+  <action name="removeColumnAction">
+   <property name="text">
+    <string>Remove Column</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R, C</string>
+   </property>
+  </action>
+  <action name="insertChildAction">
+   <property name="text">
+    <string>Insert Child</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="readMeAction">
+   <property name="text">
+    <string>Read Me</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="QtGuiApplication1.qrc"/>
+ </resources>
+ <connections/>
+</ui>
